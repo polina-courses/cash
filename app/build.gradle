@@ -1,0 +1,6 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'local.calendar.personal'
+ compileSdk 35
+ defaultConfig { applicationId 'local.calendar.personal'; minSdk 26; targetSdk 34; versionCode (System.getenv('CALENDAR_VERSION') ?: '1').toInteger(); versionName '1.' + (System.getenv('CALENDAR_VERSION') ?: '0') }
+}
